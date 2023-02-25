@@ -14,7 +14,7 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                sh 'mvn Compile'
+                sh 'mvn compile'
             }
         }
         stage ('Short Tests') {
