@@ -39,7 +39,17 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        return 0;
+        if (n <= 1) {
+            return n;
+        }
+        int fib = 1;
+        int prevFib = 1;
+        for (int i = 2; i < n; i++) {
+            int temp = fib;
+            fib += prevFib;
+            prevFib = temp;
+        }
+        return fib;
     }
 
 
@@ -51,7 +61,7 @@ class Calculator {
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
-        return null;
+        return Integer.toBinaryString(n);
     }
 
     /*
@@ -64,7 +74,7 @@ class Calculator {
      */
     String createUniqueID(String n){
 
-        return null;
+        return n + Math.random();
     }
 
 
