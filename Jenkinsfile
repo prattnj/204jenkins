@@ -3,11 +3,11 @@ pipeline {
 
     tools {
         maven 'apache maven 3.6.3'
-        jdk 'JDK 11'
+        jdk 'JDK 8'
     }
     
     stages {
-        stage ('clean') {
+        stage ('Clean') {
             steps {
                 sh 'mvn Clean'
             }
